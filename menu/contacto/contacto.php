@@ -1,9 +1,9 @@
 <?php
 
-$host = "shortline.proxy.rlwy.net";
-$port = 17437;
+$host = "turntable.proxy.rlwy.net";
+$port = 13510;
 $usuario_bd = "root";
-$contrasena_bd = "zABrudYWsowUcMoMbKvErccuHTsGlyWl";
+$contrasena_bd = "EPQjnQSMDQwTUImBISmWYAlDRXduGNdC";
 $nombre_bd = "railway";
 
 $conexion = new mysqli($host, $usuario_bd, $contrasena_bd, $nombre_bd, $port);
