@@ -1,14 +1,14 @@
 # Usa una imagen oficial de PHP con Apache
 FROM php:8.2-apache
 
-# Copia todo el contenido del proyecto al directorio público de Apache
-COPY . /var/www/html/
+# Copia SOLO el contenido dentro de PAGINAFINAL a /var/www/html/
+COPY PAGINAFINAL/ /var/www/html/
 
-# Habilita las extensiones necesarias (como mysqli para base de datos)
+# Habilita las extensiones necesarias
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Asigna los permisos correctos
 RUN chown -R www-data:www-data /var/www/html
 
-# Expone el puerto 80 (Render lo detectará automáticamente)
+# Expone el puerto 80
 EXPOSE 80
