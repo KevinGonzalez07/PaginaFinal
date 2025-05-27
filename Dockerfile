@@ -2,7 +2,7 @@
 FROM php:8.2-apache
 
 # Copia SOLO el contenido dentro de PAGINAFINAL a /var/www/html/
-COPY PAGINAFINAL/ /var/www/html/
+COPY . /var/www/html/
 
 # Habilita las extensiones necesarias
 RUN docker-php-ext-install mysqli pdo pdo_mysql
