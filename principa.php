@@ -48,7 +48,7 @@ $sesionIniciada = isset($_SESSION['usuario']);
                 ofrecerte mejores frutos,cultivados con amor y respeto por 
                 la naturaleza
            </p>
-             <a href="../PaginaFinal/menu/contacto/contacto.html" class="btn-1">Contáctanos</a>
+             <a href="menu/contacto/contacto.html" class="btn-1">Contáctanos</a>
         </div>
 
     </header>
