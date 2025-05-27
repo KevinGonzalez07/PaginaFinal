@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <form action="contacto.php" method="post">
+        <h2>Contáctanos</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="nombre" placeholder="Nombre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="tel" placeholder="Teléfono" required>
+
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="correo" id="correo" placeholder="Email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Escriba el mensaje aqui" required></textarea>
+            
+            <input type="submit" class="btn" value="Enviar">
+            <a href="../../principa.php"><button type="button">Menú</button></a>
+
+           
+            <input type="hidden" name="_captcha" value="false">
+        
+        </div>
+
+
+    </form>
+</body>
+</html>

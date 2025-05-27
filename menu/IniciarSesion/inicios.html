@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="inicios.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes cuenta ?</h3>
+                    <p>Incia Sesión con tu cuenta</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>  
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún No tienes cuenta ?</h3>
+                    <p>Regístrate para poder iniciar Sesión</p>
+                    <button id="btn__registrarse">Regístrate </button>  
+                </div>
+            </div>
+            <div class="contenedor__login-register">
+                <form action="inicio.php" method="POST" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" name="correo"placeholder="Correo Electronico">
+                    <input type="password" name="Contrasena" placeholder="Contraseña">
+                    <button>Entrar</button>
+                    <a href="../../principa.php"><button type="button">Menú</button></a>
+                </form>
+                <form action="registro_usuario_be.php" method="POST" class="formulario__register">
+                    <h2>Regístrate</h2>
+                    <input type="text" name="nombre_completo" placeholder="Nombre completo">
+                     <input type="text" name="correo" placeholder="Correo Electrónico">
+                     <input type="text" name="usuario" placeholder="Usuario">
+                     <input type="password" name="contrasena" placeholder="Contraseña">
+                     <button>Registrarse</button> 
+                     <a href="../../principa.php"><button type="button">Menú</button></a>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+<script src="inicios.js"></script>
+</body>
+</html>

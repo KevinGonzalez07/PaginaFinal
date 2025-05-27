@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: black;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #b10d52;
+    padding: 10px 20px;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 30px;
+    cursor: pointer;
+    display: none; 
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.navbar {
+    display: flex;
+    position: static;
+    width: auto;
+    padding: 0;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+/*  PRINCIPAL */
+
+.general {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.general > .titulo::after {
+    content: "Maximizando el crecimiento con agua adecuada";
+    display: block;
+    font-size: 18px;
+    color: green;
+    margin-top: 5px;
+}
+
+.grupo-riego {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.goteo, .programacion, .humedad {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: pink;
+    text-align: left;
+    box-shadow: 0 2px 5px #b10d52;
+}
+
+/* BLOG */
+
+.blog.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.blog-subtitle {
+    color: green;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 320px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    font-size: 18px;
+    margin: 10px 15px 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.blog-card p {
+    font-size: 14px;
+    margin: 0 15px 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 60px 0;
+    background-color: #b10d52;
+      
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.links h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    color: white;
+    list-style-type: none;
+}
+
+.links a:hover {
+    color: blue;
+}
+
+/* RESPONSIVE */
+@media (max-width: 990px) {
+    .menu-icono {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #b10d52;
+        padding: 10px;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        background-color: #b10d52;
+        width: 100%;
+    }
+
+    .bblog_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 90%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .links {
+        flex-direction: column;
+        text-align: center;
+       
+
+    }
+}
